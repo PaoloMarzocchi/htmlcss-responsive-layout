@@ -44,8 +44,11 @@ img {
     margin: 0 auto;
 }
 
-.row {
+.d-flex{
     display: flex;
+}
+
+.row {
     flex-wrap: wrap;
 }
 
@@ -57,11 +60,16 @@ img {
     width: 100%;
 }
 
+.btn{
+    padding: 0.5rem 0.5rem;
+    border-radius: 20px;
+}
 /* #endregion Utilities */
 
 /* #region header */
 .menu {
     background-color: var(--resp-primary);
+    color: var(--resp-lighter);
     padding: 1rem 0;
 }
 
@@ -71,6 +79,18 @@ img {
 
 .extended-menu {
     display: none;
+    & ul{
+        align-items: center;
+        justify-content: end;
+        gap: 1rem;
+        font-size: small;
+        text-align: center;
+    }
+
+    & .btn{
+        background-color: var(--resp-lighter);
+        color: black;
+    }
 }
 
 .hamburger-menu {
@@ -197,3 +217,16 @@ img {
     }
 }
 /* #endregion footer */
+
+/* #region RESPONSIVE SECTION */
+@media screen and (min-width: 992px) {
+    .site-header{
+        & .hamburger-menu{
+            display: none;
+        }
+        & .extended-menu{
+            display: block;
+        }
+    }
+}
+/* #endregion RESPONSIVE SECTION */
