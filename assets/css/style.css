@@ -185,3 +185,15 @@ img {
 /* #endregion Get-started section */
 
 /* #endregion main */
+
+/* #region footer */
+.site-footer{
+    background-color: var(--resp-dark);
+    color: var(--resp-light);
+
+    & a{
+        text-decoration: underline;
+        color: var(--resp-primary);
+    }
+}
+/* #endregion footer */
