@@ -13,6 +13,7 @@
     --resp-dark: #333333;
     --resp-light: #FDFDFD;
     --resp-lighter: #FFFFFF;
+    --resp-txt: #5B6F80;
 
 }
 
@@ -48,8 +49,8 @@ img {
     display: flex;
 }
 
-.row {
-    flex-wrap: wrap;
+.direction-col{
+    flex-direction: column;
 }
 
 .col-6 {
@@ -63,6 +64,7 @@ img {
 .btn{
     padding: 0.5rem 0.5rem;
     border-radius: 20px;
+    text-align: center;
 }
 /* #endregion Utilities */
 
@@ -103,16 +105,33 @@ img {
 
 /* #region Demo section */
 .demo {
-    padding: 2rem 0;
+    padding: 4rem 0;
+    & .row{
+        gap: 1rem;
 
+    }
     & .card {
         background-color: var(--resp-demo);
+        color: var(--resp-txt);
+        padding: 3rem 2.5rem 0 2.5rem;
+        gap: 2.5rem;
+        border-radius: 20px;
+        font-weight: 600;
+    }
+    & h2{
+        color: var(--resp-primary);
+    }
+    & a.btn{
+        background-color: var(--resp-primary);
+        color: var(--resp-lighter);
+        width: 80%;
+        font-weight:700;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
     }
 }
 
-.demo h2 {
-    color: var(--resp-primary);
-}
 
 /* #endregion Demo section */
 
