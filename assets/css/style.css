@@ -69,3 +69,17 @@ body{
         text-align: end;
     }
 /* #endregion header */
+
+/* #region main */
+    /* #region Section demo */
+        .demo{
+            padding: 2rem 0;
+        }
+        .card{
+            background-color: var(--resp-demo);
+        }
+        .demo h2{
+            color: var(--resp-primary);
+        }
+    /* #endregion Section demo */
+/* #endregion main */
