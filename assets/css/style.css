@@ -80,7 +80,8 @@ img {
 /* #endregion header */
 
 /* #region main */
-/* #region Section demo */
+
+/* #region Demo section */
 .demo {
     padding: 2rem 0;
 
@@ -93,32 +94,60 @@ img {
     color: var(--resp-primary);
 }
 
-/* #endregion Section demo */
+/* #endregion Demo section */
 
-/* #region Section planning */
+/* #region Planning section*/
 .planning {
     background-color: var(--resp-secondary);
 
-    & [class^="col"]:nth-child(1) > .card {
+    & [class^="col"]:nth-child(1)>.card {
         color: var(--resp-lighter);
+    }
+
+    & i{
+        background-color: var(--resp-secondary);
     }
 }
 
-.planning [class^="col"]:nth-child(2) > .card {
+.planning [class^="col"]:nth-child(2)>.card {
     background-color: var(--resp-lighter);
 }
 
-/* #endregion Section planning */
+/* #endregion Planning section */
 
-/* #region Testimonial */
-    .testimonial h2{
-        color: var(--resp-secondary);
-    }
+/* #region Testimonial section */
+.testimonial h2 {
+    color: var(--resp-secondary);
+}
 
-    .testimonial .card{
-        background-color: var(--resp-secondary);
+.testimonial .card {
+    background-color: var(--resp-secondary);
+    color: var(--resp-lighter);
+}
+
+/* #endregion Testimonial section*/
+
+/* #region Benefit section */
+.benefit {
+    background-color: var(--resp-secondary);
+
+    &>h2 {
         color: var(--resp-lighter);
     }
-/* #endregion Testimonial */
+
+    & .card{
+        background-color: var(--resp-lighter);
+
+        & h2, h3{
+            color: var(--resp-secondary);
+        }
+
+        & a{
+            background-color: var(--resp-secondary);
+        }
+    }
+}
+
+/* #endregion Benefit section */
 
 /* #endregion main */
