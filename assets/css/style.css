@@ -168,4 +168,20 @@ img {
 }
 /* #endregion About section */
 
+/* #region Get-started section */
+    .get-started{
+        background-color: var(--resp-secondary);
+        color: var(--resp-lighter);
+
+        & .free-adv{
+            color: var(--resp-free);
+        }
+
+        & a{
+            background-color: var(--resp-lighter);
+            color: var(--resp-secondary);
+        }
+    }
+/* #endregion Get-started section */
+
 /* #endregion main */
