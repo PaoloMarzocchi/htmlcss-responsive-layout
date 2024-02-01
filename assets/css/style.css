@@ -109,4 +109,16 @@ img {
 }
 
 /* #endregion Section planning */
+
+/* #region Testimonial */
+    .testimonial h2{
+        color: var(--resp-secondary);
+    }
+
+    .testimonial .card{
+        background-color: var(--resp-secondary);
+        color: var(--resp-lighter);
+    }
+/* #endregion Testimonial */
+
 /* #endregion main */
