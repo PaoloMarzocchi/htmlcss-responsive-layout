@@ -150,4 +150,22 @@ img {
 
 /* #endregion Benefit section */
 
+/* #region About section */
+.about{
+    & h2{
+        color: var(--resp-secondary);
+    }
+
+    & [class^="col"]:nth-child(2) > .card{
+        & p{
+            color: var(--resp-secondary);
+        }
+        & a{
+            background-color: var(--resp-secondary);
+            color: var(--resp-lighter);
+        }
+    }
+}
+/* #endregion About section */
+
 /* #endregion main */
