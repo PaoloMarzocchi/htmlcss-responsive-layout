@@ -197,11 +197,29 @@ img {
 /* #region Testimonial section */
 .testimonial h2 {
     color: var(--resp-secondary);
+    padding: 1rem 0;
 }
 
 .testimonial .card {
     background-color: var(--resp-secondary);
     color: var(--resp-lighter);
+    border-radius: 20px;
+    padding: 1rem;
+    align-items: center;
+    
+    & .img{
+        aspect-ratio: 1;
+        padding: 1rem;
+        width: 200px;
+        margin: 0 auto;
+
+        & img{
+            border-radius: 50%;
+        }
+    }
+   &  p{
+    padding: 2rem 0;
+   }
 }
 
 /* #endregion Testimonial section*/
@@ -291,7 +309,15 @@ img {
     .col-sm-4 {
         width: calc(100% / 12 *4);
     }
-
+    .testimonial .card{
+        display: flex;
+        & .img{
+            width: 450px;
+        }
+        & .text{
+            text-align: start;
+        }
+    }
 /*     .demo [class^="col"]:first-child  .img{
         justify-content: flex-start;
     } */
