@@ -306,14 +306,22 @@ img {
 .get-started {
     background-color: var(--resp-secondary);
     color: var(--resp-lighter);
-
+    & *{
+        padding: 1rem 0;
+    }
+    & h3{
+        color: var(--resp-light);
+    }
     & .free-adv {
         color: var(--resp-free);
+        font-size: 3rem;
     }
 
     & a {
         background-color: var(--resp-lighter);
         color: var(--resp-secondary);
+        padding: 1rem 3rem;
+        border-radius: 30px;
     }
 }
 
