@@ -226,22 +226,34 @@ img {
 
 /* #region Benefit section */
 .benefit {
+    padding: 2rem 0;
     background-color: var(--resp-secondary);
 
     &>h2 {
         color: var(--resp-lighter);
+        
     }
 
     & .card {
         background-color: var(--resp-lighter);
+        border-radius: 20px;
+        padding: 1rem;
 
         & h2,
         h3 {
             color: var(--resp-secondary);
+            padding-bottom: 1rem;
         }
-
-        & a {
+        & p{
+            padding: 2rem 0;
+        }
+        & a.btn {
             background-color: var(--resp-secondary);
+            padding: 0.5rem 2rem;
+            color: var(--resp-lighter);
+        }
+        & div:last-child{
+            margin-bottom: 1rem;
         }
     }
 }
@@ -305,7 +317,9 @@ img {
     .col-sm-8 {
         width: calc(100% / 12 *8);
     }
-
+    .col-sm-6{
+        width: 50%;
+    }
     .col-sm-4 {
         width: calc(100% / 12 *4);
     }
@@ -318,9 +332,10 @@ img {
             text-align: start;
         }
     }
-/*     .demo [class^="col"]:first-child  .img{
-        justify-content: flex-start;
-    } */
+    .direction-row-sm {
+        flex-direction: row;
+    }
+
 }
 
 @media screen and (min-width: 992px) {
@@ -347,6 +362,10 @@ img {
 
     .col-md-6{
         width: 50%;
+    }
+
+    .col-md-4{
+        width: calc(100%/12*4);
     }
 }
 
