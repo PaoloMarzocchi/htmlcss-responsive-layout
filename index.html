@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive layout</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -57,33 +59,83 @@
         <!-- Demo section -->
         <section class="demo">
             <div class="container">
-                <div class="row d-flex direction-col">
+                <div class="row d-flex">
                     <div class="col-12 col-sm-8">
-                        <div class="card d-flex direction-col">
-                            <h2>Get a demo application</h2>
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, rem vel adipisci voluptatem magni deserunt maiores possimus sunt quam optio.
-                            </p>
-                            <a href="#" class="btn d-flex">
-                                <i class="fa-brands fa-apple" style="color: #ffffff;"></i> 
-                                App Store
-                            </a>
-                            <img src="./assets/img/phone.png" alt="">
+                        <div class="card d-flex direction-col direction-row-md ">
+                            <div class="text d-flex direction-col">
+                                <h2>Get a demo application</h2>
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, rem vel adipisci
+                                    voluptatem magni deserunt maiores possimus sunt quam optio.
+                                </p>
+                                <a href="#" class="btn d-flex">
+                                    <i class="fa-brands fa-apple" style="color: #ffffff;"></i>
+                                    App Store
+                                </a>
+                            </div>
+                            <div class="img d-flex">
+                                <img src="./assets/img/phone.png" alt="">
+                            </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-4">
-                        <div class="card d-flex direction-col">
-                            <i class="fa-solid fa-file-code" style="color: #0084FD;"></i>
-                            <h2>Lorem ipsum dolor sit.</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui a ex laboriosam tenetur
-                                facilis, voluptate nisi! Quaerat culpa, praesentium delectus magni, vel nulla expedita
-                                ad aspernatur, numquam possimus amet voluptate.
-                            </p>
-                            <a href="#">Lorem, ipsum.</a>
+                        <div class="card d-flex direction-col txt-center">
+                            <div class="icon">
+                                <i class="fa-solid fa-file-code" style="color: #0084FD;"></i>
+                            </div>
+                            <div class="text d-flex direction-col">
+                                <h2>Clean code</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui a ex laboriosam tenetur
+                                    facilis, voluptate nisi! Quaerat culpa, praesentium 
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-4">
+                        <div class="card d-flex direction-col txt-center">
+                            <div class="icon">
+                                <i class="fa-solid fa-compass-drafting" style="color: #0084FD;"></i>
+                            </div>
+                            <div class="text d-flex direction-col">
+                                <h2>Web design</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui a ex laboriosam tenetur
+                                    facilis, voluptate nisi! Quaerat culpa, praesentium 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <div class="card  d-flex direction-col txt-center">
+                            <div class="icon">
+                                <i class="fa-solid fa-bullhorn" style="color: #0084FD;"></i>
+                            </div>
+                            <div class="text txt-center d-flex direction-col">
+                                <h2>Development</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui a ex laboriosam tenetur
+                                    facilis, voluptate nisi! Quaerat culpa, praesentium 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <div class="card d-flex direction-col txt-center">
+                            <div class="icon">
+                                <i class="fa-solid fa-file-code" style="color: #0084FD;"></i>
+                            </div>
+                            <div class="text d-flex direction-col">
+                                <h2>Branding</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui a ex laboriosam tenetur
+                                    facilis, voluptate nisi! Quaerat culpa, praesentium 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+<!--                     <div class="col-12 col-sm-4">
                         <div class="card">
                             <i class="fa-solid fa-file-code" style="color: #0084FD;"></i>
                             <h2>Lorem ipsum dolor sit.</h2>
@@ -118,7 +170,7 @@
                             </p>
                             <a href="#">Lorem, ipsum.</a>
                         </div>
-                    </div>
+ -->                    <!-- </div> -->
                 </div>
             </div>
         </section>
@@ -231,7 +283,9 @@
                             <h2>01</h2>
                             <h3>lorem2</h3>
                             <p>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium iure voluptatibus voluptatum hic amet velit quam autem inventore, non sit magni, eos, doloribus porro! Non laudantium sunt tenetur magni fugit.
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium iure voluptatibus
+                                voluptatum hic amet velit quam autem inventore, non sit magni, eos, doloribus porro! Non
+                                laudantium sunt tenetur magni fugit.
                             </p>
                             <div>
                                 <a href="#">Lorem.</a>
@@ -243,7 +297,9 @@
                             <h2>01</h2>
                             <h3>lorem2</h3>
                             <p>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium iure voluptatibus voluptatum hic amet velit quam autem inventore, non sit magni, eos, doloribus porro! Non laudantium sunt tenetur magni fugit.
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium iure voluptatibus
+                                voluptatum hic amet velit quam autem inventore, non sit magni, eos, doloribus porro! Non
+                                laudantium sunt tenetur magni fugit.
                             </p>
                             <div>
                                 <a href="#">Lorem.</a>
@@ -255,7 +311,9 @@
                             <h2>01</h2>
                             <h3>lorem2</h3>
                             <p>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium iure voluptatibus voluptatum hic amet velit quam autem inventore, non sit magni, eos, doloribus porro! Non laudantium sunt tenetur magni fugit.
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium iure voluptatibus
+                                voluptatum hic amet velit quam autem inventore, non sit magni, eos, doloribus porro! Non
+                                laudantium sunt tenetur magni fugit.
                             </p>
                             <div>
                                 <a href="#">Lorem.</a>
@@ -267,7 +325,9 @@
                             <h2>01</h2>
                             <h3>lorem2</h3>
                             <p>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium iure voluptatibus voluptatum hic amet velit quam autem inventore, non sit magni, eos, doloribus porro! Non laudantium sunt tenetur magni fugit.
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium iure voluptatibus
+                                voluptatum hic amet velit quam autem inventore, non sit magni, eos, doloribus porro! Non
+                                laudantium sunt tenetur magni fugit.
                             </p>
                             <div>
                                 <a href="#">Lorem.</a>
@@ -279,7 +339,9 @@
                             <h2>01</h2>
                             <h3>lorem2</h3>
                             <p>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium iure voluptatibus voluptatum hic amet velit quam autem inventore, non sit magni, eos, doloribus porro! Non laudantium sunt tenetur magni fugit.
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium iure voluptatibus
+                                voluptatum hic amet velit quam autem inventore, non sit magni, eos, doloribus porro! Non
+                                laudantium sunt tenetur magni fugit.
                             </p>
                             <div>
                                 <a href="#">Lorem.</a>
@@ -291,7 +353,9 @@
                             <h2>01</h2>
                             <h3>lorem2</h3>
                             <p>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium iure voluptatibus voluptatum hic amet velit quam autem inventore, non sit magni, eos, doloribus porro! Non laudantium sunt tenetur magni fugit.
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium iure voluptatibus
+                                voluptatum hic amet velit quam autem inventore, non sit magni, eos, doloribus porro! Non
+                                laudantium sunt tenetur magni fugit.
                             </p>
                             <div>
                                 <a href="#">Lorem.</a>
@@ -311,10 +375,14 @@
                         <div class="card">
                             <h2>Lorem, ipsum.</h2>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam est minima qui quidem vitae explicabo non corrupti unde veritatis molestiae, dicta vero veniam itaque facere nam. Obcaecati officia provident quasi.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam est minima qui quidem
+                                vitae explicabo non corrupti unde veritatis molestiae, dicta vero veniam itaque facere
+                                nam. Obcaecati officia provident quasi.
                             </p>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis tenetur ipsa distinctio nobis laborum voluptatem doloremque vel illum iste, rem voluptatibus explicabo quo atque minima modi, dicta harum possimus nemo.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis tenetur ipsa
+                                distinctio nobis laborum voluptatem doloremque vel illum iste, rem voluptatibus
+                                explicabo quo atque minima modi, dicta harum possimus nemo.
                             </p>
                         </div>
                     </div>
@@ -325,10 +393,11 @@
                                 <i class="fa-solid fa-quote-left" style="color: #9792E4"></i>
                             </div>
                             <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem quam enim cum beatae modi fugiat laudantium eligendi nihil aut dolor!
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem quam enim cum beatae
+                                modi fugiat laudantium eligendi nihil aut dolor!
                             </p>
                             <div>
-                                <a href="#"> 
+                                <a href="#">
                                     <i class="fa-brands fa-linkedin" style="color:#FFFFFF"></i>
                                     Lorem ipsum dolor sit.
                                 </a>
@@ -347,7 +416,9 @@
                 <h2>Lorem, ipsum dolor.</h2>
                 <h2 class="free-adv">Lorem, ipsum.</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe quas quae nulla facilis. Labore hic fugiat est sed. Doloribus, possimus. Maxime placeat unde facilis voluptatem nihil reprehenderit deserunt repellat atque?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe quas quae nulla facilis. Labore hic
+                    fugiat est sed. Doloribus, possimus. Maxime placeat unde facilis voluptatem nihil reprehenderit
+                    deserunt repellat atque?
                 </p>
                 <div>
                     <a href="#">Lorem, ipsum.</a>
@@ -366,12 +437,15 @@
         <div class="container">
             <div class="top">
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem magni quasi nam, nulla, in exercitationem alias, est consequuntur earum laborum aliquam? Laborum soluta corporis est cum labore. Placeat, recusandae illo!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem magni quasi nam, nulla, in
+                    exercitationem alias, est consequuntur earum laborum aliquam? Laborum soluta corporis est cum
+                    labore. Placeat, recusandae illo!
                 </p>
             </div>
             <div class="bottom">
                 <p>
-                    <a href="#">Lorem ipsum dolor,</a> sit amet consectetur adipisicing elit. Ratione mollitia <a href="#">dolor fugit libero.</a>
+                    <a href="#">Lorem ipsum dolor,</a> sit amet consectetur adipisicing elit. Ratione mollitia <a
+                        href="#">dolor fugit libero.</a>
                 </p>
             </div>
         </div>
